@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivial de Banderas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>Adivina la Bandera</h1>
+        <p id="progress-text">Intento 1 de 10</p>
+        <img id="flag-img" src="" alt="Bandera del país">
+        <div id="options-container">
+            <!-- Las opciones se generarán con JavaScript -->
+        </div>
+        <p id="feedback-text"></p>
+    </div>
+
+    <div id="results-container" class="hidden">
+        <h2>¡Juego Terminado!</h2>
+        <p id="final-score-text">Has acertado 0 de 10</p>
+        <button id="play-again-btn">Jugar de Nuevo</button>
+    </div>
+
+    <div id="loader" class="hidden">Cargando...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
