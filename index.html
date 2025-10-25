@@ -11,8 +11,18 @@
 </head>
 <body>
 
-    <div id="game-container">
-        <h1>Adivina la Bandera</h1>
+    <div id="language-selector-container">
+        <h1>Bienvenido / Welcome</h1>
+        <p>Elige un idioma para jugar:</p>
+        <p>Choose a language to play:</p>
+        <div class="lang-buttons">
+            <button class="lang-btn" data-lang="es">Español</button>
+            <button class="lang-btn" data-lang="en">English</button>
+        </div>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <h1 id="game-title">Adivina la Bandera</h1>
         <p id="progress-text">Intento 1 de 10</p>
         <img id="flag-img" src="" alt="Bandera del país">
         <div id="options-container">
@@ -22,7 +32,7 @@
     </div>
 
     <div id="results-container" class="hidden">
-        <h2>¡Juego Terminado!</h2>
+        <h2 id="results-title">¡Juego Terminado!</h2>
         <p id="final-score-text">Has acertado 0 de 10</p>
         <button id="play-again-btn">Jugar de Nuevo</button>
     </div>
